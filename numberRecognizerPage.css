@@ -1,0 +1,203 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-color: #44355B;
+	background-color: #44355B;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ECA72C;
+	font-family: monospace;
+	font-size: 4vw;
+	margin-top: -20px;
+}
+
+#pageContent {
+	display: grid;
+	grid-template-columns: 20vw 60vw 20vw;
+	height: 90vh;
+}
+
+#log {
+	overflow: auto;
+	margin: 5px;
+	padding: 5px;
+	background-color: #31263E;
+	border-radius: 20px;
+}
+
+#log::-webkit-scrollbar {
+	display: none;
+}
+
+.logElement {
+	background-color: #44355B;
+	display: block;
+	height: 50px;
+	margin: 0px;
+	margin-bottom: 5px;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 5vw 5vw auto;
+	border-radius: 20px;
+}
+
+.expectedP {
+	box-sizing: border-box;
+	color: white;
+	text-align: center;
+}
+
+.receivedP {
+	box-sizing: border-box;
+	color: white;
+	text-align: center;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+
+.dateP {
+	box-sizing: border-box;
+	color: white; 
+	text-align: center;
+}
+
+#logAmountDisplayBox {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+#amountDisplay {
+	font-weight: bold;
+}
+
+#passedAmount {
+	margin: 0px;
+	border-bottom: 1px solid black;
+	border-right: 2px solid black;
+	color: green;
+	padding-right: 2px;
+	font-size: 25px;
+}
+
+#failedAmount {
+	margin: 0px;
+	border-top: 1px solid black;
+	border-right: 2px solid black;
+	color: red;
+	padding-right: 2px;
+	font-size: 25px;
+}
+
+#totalAmount {
+	margin: 0px;
+	color: #ECA72C;
+	font-size: 40px;
+	margin-left: 2px;
+}
+
+#middleContent {
+	display: grid;
+	grid-template-columns: 60vw;
+	grid-template-rows: 50vh 10vh auto;
+	box-sizing: border-box;
+}
+
+#showFieldBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#showField {
+	font-size: 10vw;
+	color: white;
+	font-weight: bold;
+	margin: 0px;
+	text-align: center;
+}
+
+#inputField {
+	text-align: center;
+	font-size: 5vw;
+	background-color: #221E22;
+	color: white;
+	font-weight: bold;
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 10px;
+}
+
+#stats {
+	background-color: #31263E;
+	border-radius: 20px;
+	margin: 5px;
+}
+
+#currentProzent {
+	font-size: 6vw;
+	text-align: center;
+	margin: 0px;
+	color: #ECA72C;
+}
+
+#accountBar {
+	position: fixed;
+	background-color: white;
+	width: 45vw;
+	height: 100px;
+	left: 50%;
+	bottom: 20px;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	background-color: #EE5622;
+	background-color: #EAFDCF;
+	background-color: #F3F3F3;
+}
+
+#person {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+#accountName {
+	flex-grow: 1;
+	padding-left: 30px;
+	font-size: 3vw;
+}
+
+#points {
+	font-size: 5vw;
+	color: #ECA72C;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+#header {
+	display: flex;
+	flex-direction: column;
+	height: 10vh;
+}
+
+#brainImg {
+	display: block;
+	width: 4vw;
+	height: 4vw;
+	margin-left: 45%;
+	transform: translate(-50%, 0);
+	margin-top: 10px;
+}
